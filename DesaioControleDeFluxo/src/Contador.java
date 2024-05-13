@@ -12,6 +12,9 @@ public class Contador {
             contar(parametroUm, parametroDois);
         } catch (ParametrosInvalidosException e) {
             System.out.println(e.getMessage());
+            public class ParametrosInvalidosException extends Exception {
+                public ParametrosInvalidosException(String message) {
+                    super(message);
         }
     }
 
@@ -23,11 +26,14 @@ public class Contador {
         for (int i = parametroUm + 1; i <= parametroDois; i++) {
             System.out.println("Imprimindo o número " + i);
         }
-        public class ParametrosInvalidosException extends Exception {
-            public ParametrosInvalidosException(String message) {
-                super(message);
+        
             }
         }
         
+    }
+
+    private static void contar(int parametroUm, int parametroDois) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'contar'");
     }
 }
